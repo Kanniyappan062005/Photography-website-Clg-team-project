@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(228, 209, 104);
+    margin-top: 20px;
+}
+
+h1,.details{
+    text-align: center;
+}
+
+.details a{
+    text-decoration: none;
+}
+
+ul,li{
+    text-align: center;
+    display: inline-block;
+}
+ul{
+    padding: 20px;
+}
+
+li a{
+    color: gray;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+li a:hover{
+    color: white;
+}
+
+.order{
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+    
+}
+
+.image{
+    border: 2px black solid;
+    width: 100%;
+    margin: 10px;
+    background-color: aliceblue;
+    float: left;
+    border-radius: 10px;
+}
+p{
+    background-color: white;
+    color: black;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:5%;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    margin: 5px 15px;
+    float: left;
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+  }
+
+.Contact{
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: rgb(180, 207, 207);
+}
+.table{
+    padding: 15px;
+    font-size: 30px;
+    
+}
+
+.ordernow{
+    background-color: yellow;
+    color: black;
+    display: inline;
+    width: fit-content;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px rgb(12, 12, 12) solid;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-top: 100px;
+    margin-right: 68%;
+}
+
+.send{
+    margin-top: 10px;
+    background-color: aqua;
+    color: black;
+    width: 230px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+input{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+

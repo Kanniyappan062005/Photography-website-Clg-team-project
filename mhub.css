@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(img1.jpg); */
+    color: white;
+    background-color: #212121;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+     float: left;
+     width: 150px;
+     height: 40px;
+     /* mix-blend-mode: color-burn;
+     /* object-fit: ;
+     object-position: px; */ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    font-family:Arial;
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: aqua;
+    padding: 8px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover{
+    color: aqua ;
+    background-color: navy;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.image-auto-change{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 109vh;
+        font-family: sans-serif;
+}
+
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 25s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.content h1{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    gap: 3px;
+}
+.content span{
+    color: black;
+    font-size: 30px;
+}
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(img2.jpg);
+    }
+    20%
+    {
+        background-image: url(img1.jpg);
+    }
+    40%
+    {
+        background-image: url(img3.jpg);
+    }
+    60%
+    {
+        background-image: url(img4.jpg);
+    }
+    80%
+    {
+        background-image: url(img5.jpg);
+    }
+    100%
+    {
+        background-image: url(img6.jpg);
+    }
+}

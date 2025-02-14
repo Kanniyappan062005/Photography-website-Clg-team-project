@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Booking Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+   </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Booking Now</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name<span>*</span></label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="eventname">Event Name<span>*</span></label>
+            <select name="eventname" id="eventname">
+              <option value="">---</option>
+              <option value="">Wedding</option>
+              <option value="">Engagement</option>
+              <option value="">Anniversary</option>
+              <option value="">Baby Shower</option>
+              <option value="">Birthday</option>
+              <option value="">Naming Caremony</option>
+              <option value="">HOUSE Warming Caremony</option>
+              <option value="">Puberty Function</option>
+              <option value="">EARRING Festival</option>
+              <option value=""></option>
+           </select>
+          </div>
+          <div class="user-input-box">
+            <label for="email">E-mail<span>*</span></label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number<span>*</span></label>
+            <input type="number"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="datetime">Function Date<span>*</span></label>
+            <input type="date"
+                    id="date-input"
+                    name="date"
+                    placeholder="DD\MM\YYYY"/>
+            <button id="calendar-btn" >📆</button>
+            <script>
+              document.getElementById("calendar-btn").addEventListener("click",function(){
+                document.getElementById("date-input").showPicker()
+              });
+            </script>
+          </div>
+          <div class="user-input-box">
+            <label for="address">Address<span>*</span></label>
+            <input type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Enter your Address"/>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Booking Confirm">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

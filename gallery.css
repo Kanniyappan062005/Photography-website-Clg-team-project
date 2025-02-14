@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    padding: 10px;
+}
+header h1{
+    color: rgb(250, 254, 16);
+}
+
+body{
+    background-color: rgb(135, 120, 221);
+    font-family: "Style Script", cursive;
+}
+h1{
+    text-align: center;
+    color: rgb(241, 42, 208);
+    padding: 5px;
+    font-size: 40px;
+}
+
+.wedding h1,.heading-2 h1{
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffffff;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+}
+.container div{
+    width: 200px;
+    color: aliceblue;
+    flex-grow: 2;
+    margin-top: 20px;
+    flex-basis: 23%;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+  }
+
