@@ -53,7 +53,7 @@ body {
     padding-bottom: 20px;
 }
 
-#calendar-btn{
+#calendar-btn {
     position: absolute;
     right: 7.5%;
     top: 47px;
@@ -71,7 +71,8 @@ body {
     margin: 5px 0;
 }
 
-.user-input-box input,select {
+.user-input-box input,
+select {
     height: 45px;
     width: 95%;
     font-weight: bolder;
@@ -115,6 +116,20 @@ span {
     transform: scale(1.03);
 }
 
+.back-btn i {
+    font-size: 50px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    padding: 12px;
+}
+
+.back-btn i:hover{
+    opacity: 0.7;
+}
+
 @media(max-width: 700px) {
     body {
         background: url(bg-image-2.jpg);
@@ -135,7 +150,7 @@ span {
         justify-content: space-between;
     }
 
-    .form-submit-btn input{
+    .form-submit-btn input {
         background-color: rgb(53, 206, 53);
         color: black;
     }
@@ -147,5 +162,9 @@ span {
 
     .main-user-info::-webkit-scrollbar {
         width: 0;
+    }
+
+    .back-btn{
+        display: none;
     }
 }

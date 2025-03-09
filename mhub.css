@@ -23,10 +23,10 @@ header {
     align-items: center;
 }
 
-.logo img{
-     float: left;
-     width: 150px;
-     height: 40px;
+.logo img {
+    float: left;
+    width: 150px;
+    height: 40px;
 }
 
 .nav-links {
@@ -45,11 +45,15 @@ header {
     border-radius: 10px;
 }
 
-.nav-links a:hover{
-    color: black ;
+.nav-links a:hover {
+    color: black;
     background-color: aqua;
     transition: 0.5s ease-out;
     box-shadow: 0 4px 10px rgb(125, 255, 255);
+}
+
+.menubar{
+    display: none;
 }
 
 .hero {
@@ -58,14 +62,14 @@ header {
 }
 
 
-.image-auto-change{
-        margin: 0px;
-        padding: 0;
-        width: 100%;
-        height: 100vh;
+.image-auto-change {
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
 }
 
-.Section_top{
+.Section_top {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -78,58 +82,155 @@ header {
     justify-content: center;
     animation: change 30s infinite ease-in-out;
 }
-.content{
+
+.content {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    color: white;
+    opacity: 0.6;
+    animation: change-font-color 30s infinite ease-in-out;
 }
-.content h1{
-    color: #fff;
+
+.content h1 {
     font-size: 50px;
     letter-spacing: 10px;
+    font-weight: 700;
     text-transform: uppercase;
     gap: 3px;
 }
-.content span{
-    color: black;
-    font-size: 30px;
+
+.content span {
+    font-size: 35px;
+    font-weight: 400;
 }
 
 
-@keyframes change{
-    0%
-    {
+@keyframes change {
+    0% {
         background-image: url(./Home__images/home-page__Anniversary-image.jpg);
     }
-    15%
-    {
+
+    15% {
         background-image: url(./Home__images/home-page__birthday-image.jpg);
     }
-    30%
-    {
+
+    30% {
         background-image: url(./Home__images/home-page__earing-image.jpg);
     }
-    45%
-    {
+
+    45% {
         background-image: url(./Home__images/home-page__engagement-image.jpg);
     }
-    60%
-    {
+
+    60% {
         background-image: url(./Home__images/home-page__housewarming-image.jpg);
     }
-    85%
-    {
+
+    80% {
         background-image: url(./Home__images/home-page__marriage-image.jpg);
     }
 
-    100%{
+    100% {
         background-image: url(./Home__images/home-page__Puberty-Function.jpg);
     }
 }
 
+@keyframes change-font-color {
+     0%{
+        color: white;
+     }
+
+     15%{
+        color: rgb(245, 61, 6);
+     }
+     
+     30%{
+        color: rgb(255, 238, 0);
+     }
+     
+     45%{
+        color: rgb(9, 255, 0);
+     }
+     
+     60%{
+        color: rgb(0, 255, 255);
+     }
+     
+     80%{
+        color: rgb(4, 0, 255);
+     }
+     
+     100%{
+        color: rgb(255, 0, 179);
+     }
+}
 
 
-/****GALLERY STYLESHEETT *\
 
+/* GALLERY STYLESHEET */
+
+.gallery-section {
+    margin: 30px 50px 70px 50px;
+}
+
+.gallery__title {
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    body{
+        font-size: 12px;
+    }
+
+    /* Navbar */
+
+    .logo{
+        width: 80px;
+    }
+
+    .menubar{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    /* Gallery Page */
+
+    .gallery-section{
+        margin: 10px;
+    }
+
+    .gallery__container {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+}
