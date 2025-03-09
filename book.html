@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Booking Now</h1>
+        <form action="config.php">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="fullName">Full Name<span>*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="eventName">Event Name<span>*</span></label>
+                    <select name="eventName" id="eventName" required>
+                        <option value="">---</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Baby Shower">Baby Shower</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Naming Ceremony">Naming Ceremony</option>
+                        <option value="House Warming">House Warming</option>
+                        <option value="Puberty Function">Puberty Function</option>
+                        <option value="Earring Festival">Earring Festival</option>
+                    </select>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">E-mail<span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="phoneNumber">Phone Number<span>*</span></label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="eventDate">Function Date<span>*</span></label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="address">Address<span>*</span></label>
+                    <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+                </div>
+            </div>
+            <div class="form-submit-btn"> 
+                <input id="submit" type="submit" value="Book Now" onclick="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- <script>
+      var submit=document.getElementById("submit")
+
+      function bookingsuccess(){
+        alert("Booking Successfully!")
+      }
+</script> -->
