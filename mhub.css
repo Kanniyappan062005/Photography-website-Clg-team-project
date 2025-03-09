@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+}
+
+
+header {
+    color: white;
+    background-color: #212121;
+    padding: 10px 0px 5px 0px;
+    box-shadow: 0 3px 4px rgb(56, 56, 56);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+     float: left;
+     width: 150px;
+     height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 8px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover{
+    color: black ;
+    background-color: aqua;
+    transition: 0.5s ease-out;
+    box-shadow: 0 4px 10px rgb(125, 255, 255);
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.image-auto-change{
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+}
+
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./Home__images/home-page__Anniversary-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.content h1{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    gap: 3px;
+}
+.content span{
+    color: black;
+    font-size: 30px;
+}
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(./Home__images/home-page__Anniversary-image.jpg);
+    }
+    15%
+    {
+        background-image: url(./Home__images/home-page__birthday-image.jpg);
+    }
+    30%
+    {
+        background-image: url(./Home__images/home-page__earing-image.jpg);
+    }
+    45%
+    {
+        background-image: url(./Home__images/home-page__engagement-image.jpg);
+    }
+    60%
+    {
+        background-image: url(./Home__images/home-page__housewarming-image.jpg);
+    }
+    85%
+    {
+        background-image: url(./Home__images/home-page__marriage-image.jpg);
+    }
+
+    100%{
+        background-image: url(./Home__images/home-page__Puberty-Function.jpg);
+    }
+}
+
+
+
+/****GALLERY STYLESHEET *\
+
