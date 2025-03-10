@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="mhub.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Icon stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -41,6 +41,35 @@
             </div>
         </nav>
     </header>
+
+
+     <!-- Sign section -->
+
+        <section class="sign-in-popup-container">
+            <div class="overlay hidden" id="popup-overlay"></div>
+            <div class="sign-in hidden" id="popup-signin">
+                <i class="fa-solid fa-xmark" id="sign-in-close" style="color: #000000; font-size: 20px;"></i>
+                <h1 class="sign-in-heading">Sign in your account</h1>
+                <label for="email">Email address</label>
+                <input type="email" name="email">
+
+                <label for="password">Password</label>
+                <input type="password" name="password">
+
+                <div class="verify">
+                    <div class="remember">
+                        <p class="tick-box" style="font-size: 15px;"></p>
+                        <p>Remember me</p>
+                    </div>
+                    <div class="forget">
+                        <p><a href="">Forget Password?</a></p>
+                    </div>
+                </div>
+
+                <button type="submit" class="sign-in-btn">Sign in</button>
+            </div>
+        </section>
+
 
     <!-- Gallery Main Heading -->
 

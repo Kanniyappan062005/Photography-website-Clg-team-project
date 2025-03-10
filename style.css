@@ -1,170 +1,352 @@
-* {
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 300;
 }
 
-body {
+/* Hidden class */
+
+.hidden{
+    display: none;
+}
+
+
+header {
+    color: white;
+    background-color: #212121;
+    padding: 10px 0px 5px 0px;
+    box-shadow: 0 3px 4px rgb(56, 56, 56);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 8px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    color: black;
+    background-color: aqua;
+    transition: 0.5s ease-out;
+    box-shadow: 0 4px 10px rgb(125, 255, 255);
+}
+
+.menubar{
+    display: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.image-auto-change {
+    margin: 0px;
+    padding: 0;
+    width: 100%;
     height: 100vh;
+    z-index: 1;
+}
+
+.Section_top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./Home__images/home-page__Anniversary-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0.6;
+    animation: change-font-color 30s infinite ease-in-out;
+}
+
+.content h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    gap: 3px;
+}
+
+.content span {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+
+@keyframes change {
+    0% {
+        background-image: url(./Home__images/home-page__Anniversary-image.jpg);
+    }
+
+    15% {
+        background-image: url(./Home__images/home-page__birthday-image.jpg);
+    }
+
+    30% {
+        background-image: url(./Home__images/home-page__earing-image.jpg);
+    }
+
+    45% {
+        background-image: url(./Home__images/home-page__engagement-image.jpg);
+    }
+
+    60% {
+        background-image: url(./Home__images/home-page__housewarming-image.jpg);
+    }
+
+    80% {
+        background-image: url(./Home__images/home-page__marriage-image.jpg);
+    }
+
+    100% {
+        background-image: url(./Home__images/home-page__Puberty-Function.jpg);
+    }
+}
+
+@keyframes change-font-color {
+     0%{
+        color: white;
+     }
+
+     15%{
+        color: rgb(245, 61, 6);
+     }
+     
+     30%{
+        color: rgb(255, 238, 0);
+     }
+     
+     45%{
+        color: rgb(9, 255, 0);
+     }
+     
+     60%{
+        color: rgb(0, 255, 255);
+     }
+     
+     80%{
+        color: rgb(4, 0, 255);
+     }
+     
+     100%{
+        color: rgb(255, 0, 179);
+     }
+}
+
+/* SIGN IN SECTION */
+
+.overlay {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.sign-in-popup-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: url(bg-image.jpg);
-    background-size: cover;
-}
-
-.container {
     width: 100%;
-    max-width: 950px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 50px;
-    margin: 0 28px;
-    border-radius: 10px;
-    box-shadow: inset -2px 2px 2px white;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
 }
 
-.form-title {
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 6px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    border-bottom: solid 1px white;
+.sign-in-heading {
+    font-size: 30px;
 }
 
-.main-user-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 0;
-}
-
-.user-input-box:nth-child(2n) {
-    justify-content: end;
-}
-
-.user-input-box {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
-    padding-bottom: 20px;
-}
-
-#calendar-btn {
-    position: absolute;
-    right: 7.5%;
-    top: 47px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.user-input-box label {
-    width: 95%;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 5px 0;
-}
-
-.user-input-box input,
-select {
-    height: 45px;
-    width: 95%;
-    font-weight: bolder;
-    font-family: Verdana;
-    font-size: 15px;
-    border-radius: 7px;
-    outline: none;
-    border: 1px solid grey;
-    padding: 0 10px;
-}
-
-span {
-    color: rgb(255, 217, 2);
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.form-submit-btn input {
-    cursor: pointer;
-}
-
-.form-submit-btn {
-    margin-top: 40px;
-}
-
-.form-submit-btn input {
+input,
+label {
     display: block;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 25px;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    color: rgb(209, 209, 209);
-    background: rgba(63, 114, 76, 0.7);
 }
 
-.form-submit-btn input:hover {
-    background: rgba(56, 204, 93, 0.7);
-    color: rgb(255, 255, 255);
+label {
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.sign-in {
+    width: 320px;
+    margin-bottom: 150px;
+    border: black 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    z-index: 4;
+    position: relative;
+}
+
+#sign-in-close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.verify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tick-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.verify a {
+    text-decoration: none;
+    color: rgb(0, 46, 146);
+}
+
+.sign-in-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgb(89, 0, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sign-in-btn:hover{
+    opacity: 0.8;
+}
+
+/* GALLERY STYLESHEET */
+
+.gallery-section {
+    margin: 30px 50px 70px 50px;
+}
+
+.gallery__title {
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+img:hover {
     transform: scale(1.03);
 }
 
-.back-btn i {
-    font-size: 50px;
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 100%;
-    padding: 12px;
+.gallery__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.back-btn i:hover{
-    opacity: 0.7;
-}
 
-@media(max-width: 700px) {
-    body {
-        background: url(bg-image-2.jpg);
-        background-size: cover;
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    body{
+        font-size: 12px;
     }
 
-    .container {
-        min-width: 300px;
-        min-height: 60%;
+    /* Navbar */
+
+    .logo{
+        width: 80px;
     }
 
-    .user-input-box {
-        margin-bottom: 12px;
-        width: 100%;
+    .menubar{
+        display: block;
     }
 
-    .user-input-box:nth-child(2n) {
-        justify-content: space-between;
-    }
-
-    .form-submit-btn input {
-        background-color: rgb(53, 206, 53);
-        color: black;
-    }
-
-    .main-user-info {
-        max-height: 400px;
-        overflow: auto;
-    }
-
-    .main-user-info::-webkit-scrollbar {
-        width: 0;
-    }
-
-    .back-btn{
+    .nav-links{
         display: none;
     }
+
+    /* Gallery Page */
+
+    .gallery-section{
+        margin: 10px;
+    }
+
+    .gallery__container {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
 }

@@ -7,7 +7,7 @@ var tickbox = document.querySelector(".tick-box")
 
 // Show popup on clicking sign-in button
 navbarsigninbtn.addEventListener("click", function () {
-    overlay.classList.remove("hidden");  
+    overlay.classList.remove("hidden");
     signin.classList.remove("hidden");
 });
 
