@@ -2,7 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>Order now</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments Hub</title>
+    <link rel="stylesheet" href="order.css">
+
+    <!-- Icon stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Font-Stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -10,22 +21,27 @@
         rel="stylesheet">
 </head>
 
-<link rel="stylesheet" href="order.css">
-
 <body>
 
-    <header class="navbar">
-        <div>
-            <h1 class="navbar__heading">Moment's Products</h1>
-        </div>
+    <header>
+        <nav class="navbar">
+            <dir class="logo">
+                <img src="logo1.png">
+            </dir>
 
-        <div class="navbar__menu">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="book.html">Booking</a> </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Products</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a id="navbar-signin-btn" style="cursor: pointer;">Sign In </a></li>
             </ul>
-        </div>
+
+            <div class="menubar">
+                <i class="fa-solid fa-bars" style="color: #ffffff; font-size: 20px; margin-right: 20px;"></i>
+            </div>
+        </nav>
     </header>
 
     <section class="categories">
@@ -61,8 +77,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 850</del>
-                    <span>$ 600/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 850</del>
+                    <span>₹ 600/-</span>
                 </div>
             </div>
 
@@ -72,8 +88,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 650</del>
-                    <span>$ 550/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 650</del>
+                    <span>₹ 550/-</span>
                 </div>
             </div>
 
@@ -83,8 +99,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 500</del>
-                    <span>$ 450/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 500</del>
+                    <span>₹ 450/-</span>
                 </div>
             </div>
 
@@ -94,8 +110,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 800</del>
-                    <span>$ 650/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 800</del>
+                    <span>₹ 650/-</span>
                 </div>
             </div>
 
@@ -105,8 +121,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 600</del>
-                    <span>$ 500/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 600</del>
+                    <span>₹ 500/-</span>
                 </div>
             </div>
 
@@ -116,8 +132,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 900</del>
-                    <span>$ 750/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 900</del>
+                    <span>₹ 750/-</span>
                 </div>
             </div>
 
@@ -127,8 +143,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 650</del>
-                    <span>$ 500/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 650</del>
+                    <span>₹ 500/-</span>
                 </div>
             </div>
 
@@ -138,8 +154,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 750</del>
-                    <span>$ 650/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 750</del>
+                    <span>₹ 650/-</span>
                 </div>
             </div>
         </div>
@@ -157,8 +173,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 2000</del>
-                    <span>$ 1600/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 2000</del>
+                    <span>₹ 1600/-</span>
                 </div>
             </div>
 
@@ -168,8 +184,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.4</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 2250</del>
-                    <span>$ 1850/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 2250</del>
+                    <span>₹ 1850/-</span>
                 </div>
             </div>
 
@@ -179,8 +195,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 2500</del>
-                    <span>$ 2350/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 2500</del>
+                    <span>₹ 2350/-</span>
                 </div>
             </div>
 
@@ -190,8 +206,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 1800</del>
-                    <span>$ 1500/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 1800</del>
+                    <span>₹ 1500/-</span>
                 </div>
             </div>
 
@@ -201,8 +217,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 1200</del>
-                    <span>$ 1000/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 1200</del>
+                    <span>₹ 1000/-</span>
                 </div>
             </div>
 
@@ -212,8 +228,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 1900</del>
-                    <span>$ 1650/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 1900</del>
+                    <span>₹ 1650/-</span>
                 </div>
             </div>
 
@@ -223,8 +239,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 850</del>
-                    <span>$ 700/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 850</del>
+                    <span>₹ 700/-</span>
                 </div>
             </div>
 
@@ -234,8 +250,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 5050</del>
-                    <span>$ 4250/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 5050</del>
+                    <span>₹ 4250/-</span>
                 </div>
             </div>
         </div>
@@ -253,8 +269,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 850</del>
-                    <span>$ 600/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 850</del>
+                    <span>₹ 600/-</span>
                 </div>
             </div>
 
@@ -264,8 +280,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 650</del>
-                    <span>$ 550/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 650</del>
+                    <span>₹ 550/-</span>
                 </div>
             </div>
 
@@ -275,8 +291,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 500</del>
-                    <span>$ 450/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 500</del>
+                    <span>₹ 450/-</span>
                 </div>
             </div>
 
@@ -286,8 +302,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 800</del>
-                    <span>$ 650/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 800</del>
+                    <span>₹ 650/-</span>
                 </div>
             </div>
 
@@ -297,8 +313,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 600</del>
-                    <span>$ 500/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 600</del>
+                    <span>₹ 500/-</span>
                 </div>
             </div>
 
@@ -308,8 +324,8 @@
                 <p>⭐⭐⭐⭐</p>
                 <p>4.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 900</del>
-                    <span>$ 750/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 900</del>
+                    <span>₹ 750/-</span>
                 </div>
             </div>
 
@@ -319,8 +335,8 @@
                 <p>⭐⭐⭐</p>
                 <p>3.5</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 650</del>
-                    <span>$ 500/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 650</del>
+                    <span>₹ 500/-</span>
                 </div>
             </div>
 
@@ -330,8 +346,8 @@
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>5.0</p>
                 <div class="product__box__cost">
-                    <del style="color: rgb(245, 85, 85);">$ 750</del>
-                    <span>$ 650/-</span>
+                    <del style="color: rgb(245, 85, 85);">₹ 750</del>
+                    <span>₹ 650/-</span>
                 </div>
             </div>
         </div>
